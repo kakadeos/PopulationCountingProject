@@ -42,8 +42,8 @@ public class PersonDaoImpl implements IPersonDao {
 
 	@Override
 	public int deletePersonInformation(int id) {
-		// TODO Auto-generated method stub
-		return 0;
+		String sql="delete from Person where id="+id+"";    
+	    return template.update(sql); 
 	}
 
 }

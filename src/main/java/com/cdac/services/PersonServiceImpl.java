@@ -26,8 +26,7 @@ public class PersonServiceImpl implements IPersonService {
 
 	@Override
 	public int deletePersonInformation(int id) {
-		
-		return 0;
+		return iPersonDao.deletePersonInformation(id);
 	}
 
 }

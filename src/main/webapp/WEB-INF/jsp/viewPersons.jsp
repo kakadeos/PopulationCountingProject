@@ -46,6 +46,7 @@
 				<th scope="col">Phone Number</th>
 				<th scope="col">Gender</th>
 				<th scope="col">Aadhar Card Number</th>
+				<th scope="col">Delete</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -57,6 +58,7 @@
 					<td>${ person.phoneNumber }</td>
 					<td>${ person.gender }</td>
 					<td>${ person.aadharCardNumber }</td>
+					<td><a href="deletePerson/${person.id}">Delete</a></td>  
 				</tr>
 			</c:forEach>
 		</tbody>
