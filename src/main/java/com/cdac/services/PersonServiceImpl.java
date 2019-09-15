@@ -16,8 +16,7 @@ public class PersonServiceImpl implements IPersonService {
 	
 	@Override
 	public int addNewPersonInformation(Person person) {
-		
-		return 0;
+		return iPersonDao.addNewPersonInformation(person);
 	}
 
 	@Override

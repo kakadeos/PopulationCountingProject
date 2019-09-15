@@ -1,3 +1,6 @@
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +33,35 @@
 		</div>
 	</nav>
 	<!-- Navbar Ended -->
-
+	<div class="container">
+		<h1 class="text-center">Persons Details</h1>
+	</div>
+	<!-- Data Table Start -->
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">ID</th>
+				<th scope="col">First Name</th>
+				<th scope="col">Last Name</th>
+				<th scope="col">Phone Number</th>
+				<th scope="col">Gender</th>
+				<th scope="col">Aadhar Card Number</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="person" items="${persons}">
+				<tr>
+					<td>${ person.id }</td>
+					<td>${ person.firstName }</td>
+					<td>${ person.lastName }</td>
+					<td>${ person.phoneNumber }</td>
+					<td>${ person.gender }</td>
+					<td>${ person.aadharCardNumber }</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+	<!-- Data Table End -->
 
 	<!-- Bootstrap dependancies -->
 

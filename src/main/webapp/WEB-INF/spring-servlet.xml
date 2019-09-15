@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/mvc  
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 	<context:component-scan
-		base-package="com.javatpoint.controllers"></context:component-scan>
+		base-package="com.cdac"></context:component-scan>
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -35,4 +35,8 @@
 	<bean id="dao" class="com.cdac.dao.PersonDaoImpl">
 		<property name="template" ref="jt"></property>
 	</bean>
+	
+	 <mvc:resources mapping="/webjars/**" location="/webjars/"/>
+	 
+	 <mvc:annotation-driven />
 </beans>  
