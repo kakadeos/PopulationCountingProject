@@ -1,23 +1,21 @@
 package com.cdac.beans;
 
 public class Person {
+	private int id;
 	private String firstName;
 	private String lastName;
 	private String phoneNumber;
 	private String gender;
 	private String aadharCardNumber;
 	
-	//Customized Constructor
-	public Person(String firstName, String lastName, String phoneNumber, String gender, String aadharCardNumber) {
-		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.phoneNumber = phoneNumber;
-		this.gender = gender;
-		this.aadharCardNumber = aadharCardNumber;
-	}
-	
+
 	//Getters and Setters
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -49,11 +47,10 @@ public class Person {
 		this.aadharCardNumber = aadharCardNumber;
 	}
 	
-	//Overrided toString()
 	@Override
 	public String toString() {
-		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber=" + phoneNumber
-				+ ", gender=" + gender + ", aadharCardNumber=" + aadharCardNumber + "]";
+		return "Person [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber="
+				+ phoneNumber + ", gender=" + gender + ", aadharCardNumber=" + aadharCardNumber + "]";
 	}
 	
 	
