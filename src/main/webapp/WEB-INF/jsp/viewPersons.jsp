@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
@@ -34,7 +35,7 @@
 	</nav>
 	<!-- Navbar Ended -->
 	<div class="container">
-		<h1 class="text-center">Persons Details</h1>
+		<h2 class="text-center"><spring:message code="viewPage.heading" text="Personal Details" /></h2>
 	</div>
 	<!-- Data Table Start -->
 	<table class="table">
