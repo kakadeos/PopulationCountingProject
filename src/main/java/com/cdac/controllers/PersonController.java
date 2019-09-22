@@ -15,6 +15,7 @@ import com.cdac.beans.Person;
 import com.cdac.services.IPersonService;
 
 @Controller
+@RequestMapping(value="/")
 public class PersonController {
 
 	@Autowired
